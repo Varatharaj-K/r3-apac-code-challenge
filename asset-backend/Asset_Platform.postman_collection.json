@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "0bd449a9-1da1-4448-b116-363bec8e61e6",
+		"name": "Asset_Platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch My Asset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/asset/myasset?accountName=Varatha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asset",
+						"myasset"
+					],
+					"query": [
+						{
+							"key": "accountName",
+							"value": "Varatha"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asset Creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"agentAccountName\": \"John\",\n  \"owner\": \"Ripe\",\n  \"ownerAccountName\": \"Varatha\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asset/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asset",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShipAsset",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"agentName\": \"John\",\n  \"assetId\": \"72a0ec62-be2a-4ebd-ab3a-6ef908b06704\",\n  \"creatorName\": \"Varatha\",\n  \"origin\": \"India\",\n  \"shipperAccountName\": \"Revanth\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asset/ship",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asset",
+						"ship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deliver Asset",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"agentName\": \"John\",\n  \"assetId\": \"c15dd7eb-afde-4bdc-ada3-7bf169de17ed\",\n  \"creatorName\": \"Varatha\",\n  \"destination\": \"India\",\n  \"transit\":\"Bike\",\n  \"shipperAccountName\": \"Revanth\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asset/deliver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asset",
+						"deliver"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountName\": \"Varatha\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/asset/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"asset",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

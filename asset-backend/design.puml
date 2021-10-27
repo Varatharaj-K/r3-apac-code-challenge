@@ -1,0 +1,5 @@
+@startuml
+Owner -> Agent: Create Asset and assign to Agent
+Agent -> Shipper: Decide the transit and submit to Shipper
+Shipper -> Agent:  Deliver the Asset and update to Agent
+@enduml
