@@ -7,6 +7,7 @@ import net.corda.core.identity.AnonymousParty
 
 /**
  * Asset CORDA state
+ *
  * */
 @BelongsToContract(AssetContract::class)
 data class AssetState(

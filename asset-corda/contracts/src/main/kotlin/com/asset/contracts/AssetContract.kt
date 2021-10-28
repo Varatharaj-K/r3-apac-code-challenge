@@ -64,6 +64,7 @@ class AssetContract : Contract {
     }
 
     // Used to indicate the transaction's intent.
+
     interface Commands : CommandData {
         class CreateAsset: Commands
         class ShipAsset : Commands
