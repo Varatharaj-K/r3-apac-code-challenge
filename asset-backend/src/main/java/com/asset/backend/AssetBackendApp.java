@@ -22,10 +22,10 @@ import java.util.ArrayList;
 @EnableAutoConfiguration
 public class AssetBackendApp extends SpringBootServletInitializer {
 
-    private static final String TITLE = "API doc for BBPS COU Server";
-    private static final String DESCRIPTION="API Documentation of BBPS COU server Application";
-    private static final String DEVELOPER_NAME="Digiledge";
-    private static final String COMPANY_URL="http://www.digiledge.bbps/";
+    private static final String TITLE = "";
+    private static final String DESCRIPTION="";
+    private static final String DEVELOPER_NAME="";
+    private static final String COMPANY_URL="";
     private static final String VERSION="1.0";
 
     public static void main(String[] args) {
